@@ -1,0 +1,5 @@
+
+- create-react-app: đây là công cụ được phát triển bởi Facebook với mục đích đơn giản hóa việc tạo ra dự án với Webpack + ReactJS
+
+- Npx: Là 1 thư viện giúp thực thi 1 cái thư viện khác mà mình k nhất thiết phải cài nó 
+       VD: npx create-react-app tiktok -> dùng thư viện npx tạo thư viện create-react-app với tên tiktok mà k cần phải cài hẳn vào máy của chúng ta
