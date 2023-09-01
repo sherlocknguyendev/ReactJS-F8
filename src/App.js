@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+
+import UseState from './lesson/useState'
+import TwoWayBinding from "./lesson/twoWayBinding"
+import TodoList from './lesson/todoList';
+import UseEffect from './lesson/useEffect';
+import UseRef from './lesson/useRef'
+import UseCallback from './lesson/useCallback';
+import UseMemo from './lesson/useMemo';
+import UseReducer from './lesson/useReducer';
+
+import { useState } from 'react';
 
 function App() {
+
+  // const [show, setShow] = useState(false)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <UseState /> */}
+
+      {/* <TwoWayBinding /> */}
+
+      {/* <TodoList /> */}
+
+      {/* <button style={{ marginLeft: 20 }} onClick={() => setShow(!show)}>Toggle</button>
+      {show && <UseEffect />} */}
+
+      {/* <UseRef /> */}
+
+      {/* <UseCallback /> */}
+
+      {/* <UseMemo /> */}
+
+      <UseReducer />
+
     </div>
   );
 }

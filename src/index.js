@@ -4,11 +4,37 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+/*
+
+- Fake comments, tự custom 1 event ở phạm vi global
+  -> emit: phát 
+function emitComment(id) {
+  setInterval(() => {
+    window.dispatchEvent(
+      new CustomEvent(`lesson-${id}`, {
+        detail: `Nội dung này là của lesson ${id}`
+      })
+    )
+  }, 2000)
+}
+
+emitComment(1)
+emitComment(2)
+emitComment(3)
+
+*/
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+
+  // React.StrictMode: Là Component của React cs cơ chế để verify lại code giúp code tốt hơn (chỉ hoạt động ở dev mode) 
+  //                   -> Có thể gây ra tình trạng console.log 1 lần mà bị log ra 2 lần
+
+  // <React.StrictMode>
+  <App />
+  // </React.StrictMode>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
