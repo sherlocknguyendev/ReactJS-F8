@@ -1,0 +1,14 @@
+
+
+.heading {
+    color: pink;
+}
+
+.backgroundBlue {
+    background-color: blue;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+    }
+}

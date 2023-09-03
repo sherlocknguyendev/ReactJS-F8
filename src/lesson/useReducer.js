@@ -4,6 +4,7 @@
                 -> Nếu dùng useState giải quyết đc bài toán nào đó thì dùng useReducer cũng đc (và ngược lại)
                 -> Dùng useState là đa số: khi component có các state kiểu dl đơn giản (chuỗi, số, boolean, ...) hoặc phức tạp nhẹ (object, array nhưng chỉ cs 1 cấp) hoặc khi component chứa số lượng state ít
                 -> Dùng useReducer khi component có các state kiểu dl phức tạp hơn (như khi là object, array mà có nhiều tầng nhiều lớp) hoặc khi component chứa số lượng state nhiều (các state phải tính toán nhiều, có thể các state phụ thuộc nhau)
+                -> Dùng useReducer nên có thể chia reducer, actions (const, function) thành các file riêng xong import/export
     
     - Different:
         +) useState 

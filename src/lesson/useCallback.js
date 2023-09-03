@@ -14,7 +14,7 @@
                
 */
 
-import Content from "./content";
+import Content from "./Content";
 
 import { useCallback, useState } from "react";
 

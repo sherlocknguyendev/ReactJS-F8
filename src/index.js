@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router } from 'react-router-dom'
+
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ProviderStore } from './lesson/storeForGlobalState'
 
 /*
 
@@ -31,9 +34,13 @@ root.render(
   // React.StrictMode: Là Component của React cs cơ chế để verify lại code giúp code tốt hơn (chỉ hoạt động ở dev mode) 
   //                   -> Có thể gây ra tình trạng console.log 1 lần mà bị log ra 2 lần
 
-  // <React.StrictMode>
-  <App />
-  // </React.StrictMode>
+  <React.StrictMode>
+    {/* <ProviderStore> -> ProviderStore trong bài global state  */}
+    <Router>
+      <App />
+    </Router>
+    {/* </ProviderStore> */}
+  </React.StrictMode>
 
 );
 
